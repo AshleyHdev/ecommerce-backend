@@ -1,12 +1,17 @@
 from fastapi import FastAPI
 from app.database import engine
 from app.models import Base
-from app.routes import products  # 確保有 import products
+from app.routes import products, categories  # 匯入 routes
 
+# 自動建立資料表
+Base.metadata.create_all(bind=engine)
+
+# 建立 FastAPI 應用
 app = FastAPI()
 
-# 確保有這行
+# 註冊路由
 app.include_router(products.router, prefix="/products", tags=["Products"])
+app.include_router(categories.router, prefix="/categories", tags=["Categories"])
 
 @app.get("/")
 def read_root():
