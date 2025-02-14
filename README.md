@@ -113,9 +113,6 @@ ecommerce-backend/
 ✅ Enhanced API Documentation: Swagger UI allows developers to explore API endpoints visually.
 ✅ Heroku Deployment: The project is successfully deployed on Heroku, providing cloud-based API services.
 
-This English version preserves all original technical details while making it clear and professional for an international audience! 🚀 Let me know if you need any tweaks.
-
-
 📌 E-commerce Backend API - 電子商務後端 API
 
 這是一個基於 FastAPI 和 PostgreSQL 的 電子商務後端 API，提供 商品管理、分類管理、資料庫存取 等功能，並支援 Heroku 雲端部署。透過 Swagger UI，開發者可以輕鬆測試 API，並與前端應用整合。
