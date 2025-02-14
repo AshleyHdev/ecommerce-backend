@@ -1,3 +1,121 @@
+📌 E-commerce Backend API - E-commerce Backend API
+
+This is an E-commerce backend API built with FastAPI and PostgreSQL, providing product management, category management, and database access functionalities. It also supports Heroku cloud deployment. Through Swagger UI, developers can easily test the API and integrate it with frontend applications.
+
+📌 Table of Contents
+
+• 🌟 Key Features
+• 🚀 System Requirements
+• 🔧 Installation & Setup
+• 🖥️ Project Startup
+• 📌 API Endpoints
+• 🛠️ Core Technologies
+• 📄 Project Structure
+
+🌟 Key Features
+
+✅ Product Management: Full CRUD operations (Create, Read, Update, Delete).
+✅ Category Management: Full CRUD operations.
+✅ Database Integration: Uses PostgreSQL for structured data storage.
+✅ Cloud Deployment: Supports Heroku deployment.
+✅ API Documentation: Swagger UI for easy API exploration and testing.
+
+🚀 System Requirements
+
+Make sure your system has the following dependencies installed:
+
+• Python 3.10+
+• pip 22.0+
+• Git
+• PostgreSQL (or another SQL database)
+• Heroku CLI (for cloud deployment, if needed)
+
+🔧 Installation & Setup
+
+1️⃣ Clone the Project
+
+git clone https://github.com/AshleyHdev/ecommerce-backend.git  
+cd ecommerce-backend  
+
+2️⃣ Create a Virtual Environment
+
+python3 -m venv venv  
+source venv/bin/activate  # Mac/Linux  
+venv\Scripts\activate  # Windows  
+
+3️⃣ Install Dependencies
+
+pip install -r requirements.txt  
+
+🖥️ Project Startup
+
+1️⃣ Set Up Environment Variables (.env file)
+
+DATABASE_URL=postgresql://username:password@localhost:5432/ecommerce_db  
+SECRET_KEY=your_secret_key  
+
+2️⃣ Start the FastAPI Server
+
+uvicorn ecommerce.main:app --reload  
+
+After starting the server, you can access the API via:
+• Swagger UI (API Docs): 👉 http://127.0.0.1:8000/docs
+• View OpenAPI JSON: 👉 http://127.0.0.1:8000/openapi.json
+
+📌 API Endpoints
+
+📍 Product Management
+
+Method Endpoint Description
+POST /products/products/ Create a new product
+GET /products/products/ Get all products
+GET /products/products/{product_id} Get a specific product
+PUT /products/products/{product_id} Update a product
+DELETE /products/products/{product_id} Delete a product
+
+📍 Category Management
+
+Method Endpoint Description
+POST /categories/ Create a new category
+GET /categories/ Get all categories
+
+📌 Detailed API Documentation: 👉 http://127.0.0.1:8000/docs
+
+🛠️ Core Technologies
+
+Technology Purpose
+FastAPI API development framework
+PostgreSQL Database management
+SQLAlchemy ORM for database operations
+Pydantic Data validation
+Heroku Cloud deployment
+Swagger UI API documentation and testing
+Uvicorn FastAPI server
+
+📄 Project Structure
+
+ecommerce-backend/
+│── ecommerce/
+│   ├── __init__.py
+│   ├── main.py          # Main application file
+│   ├── database.py      # Database initialization
+│   ├── models.py        # Database models
+│   ├── schemas.py       # Pydantic models
+│   ├── crud.py          # CRUD operations
+│   ├── routes/          # API routes
+│── requirements.txt      # Project dependencies
+│── README.md            # Documentation (this file)
+
+🔹 Recent Updates (2025-02-05)
+
+✅ Product & Category Management: Full CRUD support for maintaining products and categories in the e-commerce platform.
+✅ PostgreSQL Integration: Uses SQLAlchemy ORM for efficient and secure database access.
+✅ Enhanced API Documentation: Swagger UI allows developers to explore API endpoints visually.
+✅ Heroku Deployment: The project is successfully deployed on Heroku, providing cloud-based API services.
+
+This English version preserves all original technical details while making it clear and professional for an international audience! 🚀 Let me know if you need any tweaks.
+
+
 📌 E-commerce Backend API - 電子商務後端 API
 
 這是一個基於 FastAPI 和 PostgreSQL 的 電子商務後端 API，提供 商品管理、分類管理、資料庫存取 等功能，並支援 Heroku 雲端部署。透過 Swagger UI，開發者可以輕鬆測試 API，並與前端應用整合。
