@@ -6,4 +6,4 @@ db.sqlite3
 
 # 忽略 Python 產生的暫存檔案
 __pycache__/
-logs/venv/
+venv/
