@@ -145,6 +145,12 @@ ecommerce-backend/
 
 ---
 
+📜 **License**
+本專案遵循 **MIT License**，使用者可以自由使用、修改、散佈此程式碼，但需保留原始授權聲明，詳情請見 [LICENSE](./LICENSE) 檔案。
+作者：@AshleyH.dev 🎨
+
+---
+
 ## **🔹 其他技術專案**
 - **未來即將上傳更多作品，敬請期待！🚀**
 
