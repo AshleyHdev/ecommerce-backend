@@ -20,7 +20,10 @@
 
 ---
 
+📌 API 端點
+
 📍 商品管理
+
 | 方法 | 端點 | 描述 |
 |------|------|------|
 | POST | /products/ | 創建新商品 |
@@ -28,6 +31,16 @@
 | GET | /products/{product_id} | 取得特定商品 |
 | PUT | /products/{product_id} | 更新商品 |
 | DELETE | /products/{product_id} | 刪除商品 |
+
+📍 類別管理
+
+| 方法 | 端點 | 描述 |
+|------|------|------|
+|POST | /categories/ | 創建新類別
+|GET | /categories/ | 取得所有類別
+|GET | /categories/{category_id} | 取得特定類別
+|PUT | /categories/{category_id} | 更新類別
+|DELETE | /categories/{category_id} | 刪除類別
 
 這是一個使用 FastAPI 和 PostgreSQL 建立的電子商務後端 API，提供 商品管理、類別管理、資料庫存取 等功能，並支援 Heroku 雲端部署。開發者可以透過 Swagger UI 測試 API，並將其整合至前端應用程式。
 
@@ -92,25 +105,6 @@ uvicorn app.main:app --reload
  • Swagger UI（API 文件） 👉 http://127.0.0.1:8000/docs
  • 查看 OpenAPI JSON 👉 http://127.0.0.1:8000/openapi.json
 
-📌 API 端點
-
-📍 商品管理
-
-方法 端點 描述
-POST /products/ 創建新商品
-GET /products/ 取得所有商品
-GET /products/{product_id} 取得特定商品
-PUT /products/{product_id} 更新商品
-DELETE /products/{product_id} 刪除商品
-
-📍 類別管理
-
-方法 端點 描述
-POST /categories/ 創建新類別
-GET /categories/ 取得所有類別
-GET /categories/{category_id} 取得特定類別
-PUT /categories/{category_id} 更新類別
-DELETE /categories/{category_id} 刪除類別
 
 📌 詳細 API 文件 👉 http://127.0.0.1:8000/docs
 
