@@ -119,22 +119,22 @@ Heroku 雲端部署
 Swagger UI API 文件與測試
 Uvicorn 執行 FastAPI 伺服器
 
-📄 專案結構
-
+📄 **專案結構**
+```bash
 ecommerce-backend/
 │── app/
 │   ├── __init__.py
-│   ├── main.py  # FastAPI 入口點
-│   ├── database.py  # 資料庫初始化
-│   ├── models.py  # SQLAlchemy ORM 模型
-│   ├── schemas.py  # Pydantic 資料驗證
-│   ├── crud.py  # 資料庫操作
-│   ├── routes/  # API 路由
+│   ├── main.py          # FastAPI 入口點
+│   ├── database.py      # 資料庫初始化
+│   ├── models.py        # SQLAlchemy ORM 模型
+│   ├── schemas.py       # Pydantic 資料驗證
+│   ├── crud.py          # 資料庫操作
+│   ├── routes/          # API 路由
 │   │   ├── products.py
 │   │   ├── categories.py
 │── .gitignore
-│── requirements.txt  # 相依套件
-│── README.md  # 自述文件（本文件）
+│── requirements.txt     # 相依套件
+│── README.md            # 自述文件（本文件）
 
 🔹 更新內容（2025-02-25）
 
