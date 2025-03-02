@@ -20,6 +20,15 @@
 
 ---
 
+📍 商品管理
+| 方法 | 端點 | 描述 |
+|------|------|------|
+| POST | /products/ | 創建新商品 |
+| GET | /products/ | 取得所有商品 |
+| GET | /products/{product_id} | 取得特定商品 |
+| PUT | /products/{product_id} | 更新商品 |
+| DELETE | /products/{product_id} | 刪除商品 |
+
 這是一個使用 FastAPI 和 PostgreSQL 建立的電子商務後端 API，提供 商品管理、類別管理、資料庫存取 等功能，並支援 Heroku 雲端部署。開發者可以透過 Swagger UI 測試 API，並將其整合至前端應用程式。
 
 ---
@@ -69,9 +78,8 @@ pip install -r requirements.txt
 
 🖥️ 啟動專案
 
-1️⃣ 設定環境變數 .env
-
-在 專案根目錄 建立 .env 檔案，內容如下：
+1️⃣**設定環境變數**
+請在專案根目錄 **創建 .env 檔案**，並填入以下內容：
 
 DATABASE_URL=postgresql://使用者名稱:密碼@localhost:5432/ecommerce_db
 SECRET_KEY=your_secret_key
