@@ -36,11 +36,11 @@
 
 | 方法 | 端點 | 描述 |
 |------|------|------|
-|POST | /categories/ | 創建新類別
-|GET | /categories/ | 取得所有類別
-|GET | /categories/{category_id} | 取得特定類別
-|PUT | /categories/{category_id} | 更新類別
-|DELETE | /categories/{category_id} | 刪除類別
+| POST | /categories/ | 創建新類別 |
+| GET | /categories/ | 取得所有類別 |
+| GET | /categories/{category_id} | 取得特定類別 |
+| PUT | /categories/{category_id} | 更新類別 |
+| DELETE | /categories/{category_id} | 刪除類別 |
 
 這是一個使用 FastAPI 和 PostgreSQL 建立的電子商務後端 API，提供 商品管理、類別管理、資料庫存取 等功能，並支援 Heroku 雲端部署。開發者可以透過 Swagger UI 測試 API，並將其整合至前端應用程式。
 
@@ -119,7 +119,7 @@ Heroku 雲端部署
 Swagger UI API 文件與測試
 Uvicorn 執行 FastAPI 伺服器
 
-📄 **專案結構**
+📄 **專案目錄結構**
 ```bash
 ecommerce-backend/
 │── app/
